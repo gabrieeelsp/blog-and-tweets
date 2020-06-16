@@ -23,7 +23,7 @@ Route::get('/entries/create', 'EntryController@create');
 
 Route::post('/entries', 'EntryController@store');
 
-Route::get('/entries/{entry}', 'GuessController@show');
+Route::get('/entries/{entryBySlug}', 'GuessController@show');
 
 Route::get('/entries/{entry}/edit', 'EntryController@edit');
 
